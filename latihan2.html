@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Landing page</title>
+	<style type="text/css">
+		*{
+	padding: 0;
+	margin: 0;
+}
+html{
+	scroll-behavior: smooth;
+}
+nav{
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	padding: 15px;
+	display: flex;
+	justify-content: space-around;
+	background-color:rgba(255,0,0,0);
+	/background-image: linear-gradient(to right, #00e600 ,  #4dff4d);/
+}
+nav .logo{
+	/width: 50%;/
+	color: #00cc00;
+}
+nav ul{
+	list-style: none;
+	width: 40%;
+	display: flex;
+	justify-content: space-between;
+	
+}
+nav ul li a{
+	text-decoration: none;
+	padding: 5px;
+	color: black;
+
+}
+nav ul li a:hover{
+	background-color: yellow;
+	border-radius: 10px;
+	color: black;
+}
+nav ul li button{
+	padding: 5px;
+	border-radius: 10px;
+	border: 0;
+	cursor: pointer;
+	background-color: #00cc00;
+	color: white;
+	font-weight: bold;
+}
+.container-satu{
+	padding: 50px 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.container-satu .teks-satu{
+	width: 35%;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+}
+.teks-satu input{
+	width: 250px;
+	height: 35px;
+	border-radius: 15px;
+	border: 0;
+	box-shadow: 0 0 5px #888888;
+}
+.teks-satu button{
+	padding: 10px;
+	border-radius: 15px;
+	border: 0;
+	background-color: #39e600;
+	margin-left: -60px;
+	box-shadow: 5px 0 4px #888888;
+	cursor: pointer;
+}
+.container-satu .foto-satu{
+	width: 52%;
+}
+.foto-satu img{
+	margin: 0 100px;
+}
+.container-dua .teks-dua{
+	text-align: center;
+	padding: 50px 0 0 0;
+}
+.teks-dua p{
+	padding: 10px;
+}
+.container-dua .foto-dua{
+	padding: 50px 0;
+	margin: auto;
+	width: 90%;
+	display: flex;
+	justify-content: space-around;
+}
+.foto-dua .ft1{
+	width: 16%;
+	text-align: center;
+}
+.foto-dua .ft2{
+	width: 16%;
+	text-align: center;
+}
+.foto-dua .ft3{
+	width: 16%;
+	text-align: center;
+}
+.container-tiga{
+	padding: 20px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.container-tiga .teks{
+	width: 44%;
+	display: flex;
+	justify-content: center;
+	align-items: left;
+	flex-direction: column;
+}
+.container-tiga .btn{
+	width: 38%;
+	height: 40px;
+	display: flex;
+	justify-content: flex-end;
+}
+.btn button{
+	padding: 0 10px;
+	border-radius: 50%;
+	font-size: 20px;
+	border: 0;
+	cursor: pointer;
+	background-color: #1aff1a;
+	margin-left: 10px;
+}
+.container-empat{
+	margin: auto;
+	padding: 30px 0;
+	width: 95%;
+	display: flex;
+	justify-content: space-between;
+}
+.container-empat a{
+	width: 20%;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 0 5px black;
+	border-radius: 10px;
+	text-decoration: none;
+	color: black;
+}
+.card-satu p{
+	text-align: center;
+}
+.container-empat a{
+	width: 20%;
+	height: 250px;
+	text-align: center;
+	box-shadow: 0 0 5px black;
+	border-radius: 10px;
+	text-decoration: none;
+	color: black;
+}
+.container-empat a{
+	width: 20%;
+	height: 250px;
+	text-align: center;
+	box-shadow: 0 0 5px black;
+	border-radius: 10px;
+	text-decoration: none;
+	color: black;
+}
+.container-empat a{
+	width: 20%;
+	height: 250px;
+	text-align: center;
+	box-shadow: 0 0 5px black;
+	border-radius: 10px;
+	text-decoration: none;
+	color: black;
+}
+.container-lima{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin: 50px 0;
+}
+.container-lima .foto-satu{
+	width: 55%;
+}
+.container-lima .foto-satu img{
+	width: 100%;
+}
+.container-lima .teksSatu{
+	width: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.container-enam{
+	width: 100%;
+	height: 280px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.container-enam .judul{
+	width: 75%;
+	/background-color: red;/
+}
+.container-enam .testy{
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+.testy .testimoni-satu{
+	width: 250px;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 20px;
+	box-shadow: 0 0 5px black;
+	padding: 10px;
+	box-sizing: border-box;
+	justify-content: space-around;
+}
+
+.testy .testimoni-dua{
+	width: 250px;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 20px;
+	box-shadow: 0 0 5px black;
+	padding: 10px;
+	box-sizing: border-box;
+	justify-content: space-around;
+}
+
+.testy .testimoni-tiga{
+	width: 250px;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 20px;
+	box-shadow: 0 0 5px black;
+	padding: 10px;
+	box-sizing: border-box;
+	justify-content: space-around;
+}
+.profil{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+.profil .circle{
+	border-radius: 50%;
+	width: 70px;
+	height: 70px; 
+	overflow: hidden;
+	box-shadow: 0 0 2px black;
+}
+.profil p{
+	width: 65%;
+	padding: 7px 0 0 0;
+}
+.circle.satu img{
+	margin-left: -85px;
+}
+.circle.dua img{
+	margin-left: -20px;
+}
+.container-tujuh{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.container-tujuh{
+	padding: 50px 0;
+	box-sizing: content-box;
+	width: 100%;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+.container-tujuh h2{
+	font-size: 30px;
+}
+.container-tujuh .partner{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+} 
+.container-tujuh .partner ul{
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+}
+.partner ul a{
+	width: 25%
+}
+.container-delapan{
+	padding: 30px 0 40px 0;
+	width: 80%;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+}
+.word-satu .mainn h2{
+	font-size: 30px;
+	padding: 0 0 20px 0;
+}
+.word-satu .mainn p{
+	padding: 10px 0;
+} 
+.word-satu .input input{
+	width: 90%;
+	height: 30px;
+	border-radius: 15px;
+	border: 0;
+	box-shadow: 0 0 3px black;
+}
+.word-satu .input button{
+	padding: 8px;
+	background-color: #009900;
+	color: white;
+	border: 0;
+	border-radius: 15px;
+	box-shadow: 0 0 3px black;
+	margin-left: -40px;
+}  
+.container-delapan .word-satu{
+	width: 25%;
+}
+.container-delapan .word{
+	width: 15%;
+	text-align: center;
+	height: 170px;
+}
+.container-delapan .word a{
+	text-decoration: none;
+	color: black;
+}
+.container-delapan .word p{
+
+	padding: 5px 0
+}
+	</style>
+</head>
+<body>
+	<nav>
+		<div class="logo">
+			<h2>Trekt.</h2>
+		</div>
+		<ul>
+			<li><a href="#container-satu">Home</a></li>
+			<li><a href="#container-dua">Offer</a></li>
+			<li><a href="#container-tiga">Blog</a></li>
+			<li><a href="#container-lima">Contact</a></li>
+			<li><button>Get started</button></li>
+		</ul>
+	</nav>
+	<div class="container-satu" id="container-satu">
+		<div class="teks-satu">
+			<h2>Your roadmap to product management</h2>
+			<p>Trekt is a product aducation platfrom.Trekt aims to empower individuals to become Product Managers.</p>
+			<div class="inputan">
+				<input type="text" name="search" style="margin: 40px 0;">
+				<button>Search</button>
+			</div> 
+		</div>
+		<div class="foto-satu">
+			<div class="w3-content w3-section" style="max-width:500px">
+				  <img src="https://image.freepik.com/free-vector/landing-page-concept-transfer-files_52683-25534.jpg" width="90%">
+				</div>
+		</div>
+	</div>
+	<div class="container-dua" id="container-dua">
+		<div class="teks-dua">
+			<p>WHAT WE DO</p>
+			<h2>Our Over</h2>
+			<p>Our goar is to educate young professionals on the product management industry while also prodiving users a way topractice thoir skills.</p> 
+		</div>
+		<div class="foto-dua">
+			<div class="ft1">
+			<img src="https://www.gamree.org/gamree_controller/img/blog_images/1568986319.jpg" width="80%">
+			<h2>Learn</h2>
+				<p>learn the ins and outs of product management.</p>
+			</div>
+			<div class="ft2">
+				<img src="https://static01.nyt.com/images/2014/08/10/magazine/10wmt/10wmt-articleLarge-v4.jpg?quality=75&auto=webp&disable=upscale" width="100%">
+				<h2>Practice</h2>
+				<p>We provide product management exercises so you can sharpen your skill.</p>
+			</div>
+			<div class="ft3">
+				<img src="https://img.freepik.com/free-vector/gradient-world-book-day-illustration-with-man-reading-book_23-2148867575.jpg?size=338&ext=jpg&ga=GA1.2.1540692673.1613979439" width="100%">
+				<h2>Grow</h2>
+				<p>Connect aspiring product managers with incredibel companies</p>
+			</div>
+		</div>
+	</div>
+	<div class="container-tiga" id="container-tiga">
+		<div class="teks">
+			<h1>Features</h1>
+			<p>Our goal is to educate young professionals on the product management industry while also praviding users a way to practice their skills.</p>
+		</div>
+		<div class="btn">
+			<button><</button>
+			<button>></button>
+		</div>
+	</div>
+	<div class="container-empat" id="container-empat">
+		<a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQufTCxzrwi3w4_eyIzWKTKBTyT8gf1OGaQ8g&usqp=CAU" width="150px">
+			<div class="card-satu">
+				<div class="overlay">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQufTCxzrwi3w4_eyIzWKTKBTyT8gf1OGaQ8g&usqp=CAU" width="100">
+				</div>
+					<p><b>Create product roadmaps</b></p>
+					<p>Taking products from initial concept through user research, co-creation, and rapid prototyping</p>
+				</div>
+		</a>
+		<a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk1xhTPlVm6P1EUZ-5A6ZzJb1oKkHKeaVKsQ&usqp=CAU" width="150px">
+			<div class="card-dua">
+				<div class="overlay">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk1xhTPlVm6P1EUZ-5A6ZzJb1oKkHKeaVKsQ&usqp=CAU" width="100">
+				</div>
+				<p><b>Free to set up</b></p>
+					<p>Taking products from initial concept through user research, co-creation,and rapid protatyping</p>
+				</div>
+		</a>
+	<a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoL_DRnGbkreqAIuGjUciJjemHS0R0bl6eWw&usqp=CAU" width="150px">
+			<div class="card-tiga">
+				<div class="overlay">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoL_DRnGbkreqAIuGjUciJjemHS0R0bl6eWw&usqp=CAU" width="100">
+				</div>
+				<p><b>Automatically updates</b></p>
+						<p>Taking products from initial concept through user research, co-creation,and rapid protatyping</p>
+					</div>
+				</a>
+				</a>
+		<a href="https://img.freepik.com/free-vector/data-management-collective-database-tower-people-share-commonplace-centralized-mainframe-widespread-info-stored-files-custom-regulation-vector-isolated-concept-metaphor-illustration_335657-2129.jpg?size=338&ext=jpg&ga=GA1.2.635032699.1613880540">
+			<div class="card-empat">
+				<div class="overlay">
+					<img src="https://img2.pngdownload.id/20181203/uz/kisspng-social-media-social-network-image-computer-network-telles-design-marketing-com-criatividade-5c052a5106d4f6.183084661543842385028.jpg" width="150">
+				</div>
+				<p><b>Plan your email</b></p>
+				<p>Taking products from initial concept through user research, co-creation,and rapid protatyping</p>
+			</div>
+		</a>
+	</div>
+	<div class="container-lima" id="container-lima">
+		<div class="foto-satu">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-u404Xsmstncgolphfb4eQvWOI5-RhorhQQ&usqp=CAU" width="100">
+		</div>
+		<div class="teksSatu">
+			<h2>Benefits</h2>
+			<p>Trekt is a product educating platform. Trekt aimis to empower individuals to become product managers.</p>
+		</div>
+	</div>
+	</div>
+	<div class="container-enam">
+		<div class="judul">
+			<h1>Don't Just take our words for it</h1>
+		</div>
+		<div class="testy">
+			<div class="testimoni-satu">
+				<p>"Our goal is to  educate young profesionals on the product management industry while also providing users a way to practice their skills."</p>
+				<div class="profil">
+					<div class="circle satu">
+							<img src="<p>Taking products from initial concept through user research, co-creation,and rapid protatyping</p>" width="80">
+					</div>
+					<p><b>Rizka</b><br>Dosen</p>
+				</div>
+			</div>
+			<div class="testimoni-dua">
+				<p>"Our goal is to  educate young profesionals on the product management industry while also providing users a way to practice their skills."</p>
+				<div class="profil">
+					<div class="circle dua">
+						<img src="https://img.freepik.com/free-photo/cheerful-curly-business-girl-wearing-glasses_176420-206.jpg?size=626&ext=jpg&ga=GA1.2.635032699.1613880540" width="120">
+					</div>
+					<p><b>Siti</b><br>Sekretaris</p>
+
+				</div>
+			</div>
+			<div class="testimoni-tiga">
+				<p>"Our goal is to  educate young profesionals on the product management industry while also providing users a way to practice their skills."</p>
+				<div class="profil">
+					<div class="circle">
+						<img src="https://img.freepik.com/free-photo/positive-male-customer-presenting-new-product_74855-3636.jpg?size=626&ext=jpg&ga=GA1.2.635032699.1613880540" width="120">
+					</div>
+					<p><b>Rizki</b><br>Guru</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-tujuh">
+		<h2>Our Partners</h2>
+		<p>Trekt aims to empowerindividuals to become product managers.</p>
+		<div class="partner">
+			<ul>
+				<li><a href="#">
+					<img src="https://1.bp.blogspot.com/-9T3V5Jm9F-w/YDcOuwD8dPI/AAAAAAAAAMI/B-gsSYw68Q8eArAbCFJ2PXbw6Hd7jv-oQCLcBGAsYHQ/s0/Screenshot%2B%252848%2529.png">
+					</a>
+				</li>
+				<li><a href="#">
+					<img src="https://1.bp.blogspot.com/-rGwFnJG6WYE/YDcOwUESiUI/AAAAAAAAAMM/oRcjN5eaHewU7DFCXonb1Wm9hNp-KGTZACLcBGAsYHQ/s0/Screenshot%2B%252849%2529.png">
+					</a>
+				</li>
+				<li><a href="#">
+					<img src="https://1.bp.blogspot.com/-_0QasWzIuA0/YDcOx90c_NI/AAAAAAAAAMQ/pFLat_mp-LkEQLFwGibN-3_dHSQK-Qt9ACLcBGAsYHQ/s0/Screenshot%2B%252850%2529.png">
+					</a>
+				</li>
+				<li><a href="#">
+					<img src="https://1.bp.blogspot.com/-iyblhA1pZ50/YDcOzD1Q5aI/AAAAAAAAAMU/2Q022NociXE8q2fCTYM0aSdTb69UDhkGQCLcBGAsYHQ/s0/Screenshot%2B%252851%2529.png">
+					</a>
+				</li>
+				<li><a href="#">
+					<img src="https://1.bp.blogspot.com/-Ri5DVQ7MK30/YDcO0HqgI_I/AAAAAAAAAMY/CgetF6WAKUE61ehyZxfyL_Mw-3UrXT2owCLcBGAsYHQ/s0/Screenshot%2B%252852%2529.png">
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="container-delapan">
+		<div class="word-satu">
+			<div class="mainn">
+				<h2>Trekt.</h2>
+				<p>Our Platform helps you build easy-to-Navigate. <br>cross platform experiences</p>
+			</div>
+			<div class="input">
+				<input type="email" name="email" placeholder="  Your Email Addres">
+				<button>Send</button>
+			</div>
+		</div>
+		<div class="word">
+			<p><b>Products</b></p>
+			<p><a href="">Product</a></p>
+			<p><a href="">Solutions</a></p>
+			<p><a href="">Why Trekt</a></p>
+			<p><a href="">Comunity</a></p>
+			<p><a href="">Company</a></p>
+		</div>
+		<div class="word">
+			<p><b>Resources</b></p>
+			<p><a href="">Suport</a></p>
+			<p><a href="">Contact</a></p>
+			<p><a href="">Press</a></p>
+			<p><a href="">eBooks&Guides</a></p>
+			<p><a href="">FAQs</a></p>
+		</div>
+		<div class="word">
+			<p><b>Connect</b></p>
+			<p><a href="">Contact Us</a></p>
+			<p><a href="">Office Locations</a></p>
+			<p><a href="">Careers</a></p>
+		</div>
+	</div>
+
+
+
+
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 1500); // Change image every 2 seconds
+}
+</script>
+</body>
